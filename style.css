@@ -192,6 +192,38 @@ section.offer-section {
   padding: calc(80px - 1cm) 0;
 }
 
+section.offer-section--bg {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  border-top: none;
+}
+
+section.offer-section--bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('zuri-west.jpg');
+  background-size: 120%;
+  background-position: center 36%;
+  background-repeat: no-repeat;
+  filter: grayscale(1) brightness(1.12) contrast(1.2);
+  z-index: 0;
+}
+
+section.offer-section--bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+section.offer-section--bg .container {
+  position: relative;
+  z-index: 2;
+}
+
 section.bg-white {
   background-color: var(--white);
 }
@@ -290,7 +322,7 @@ section.bg-white {
 .offer-col {
   background: var(--white);
   padding: 2.2rem 1.5rem;
-  border-top: 3px solid var(--steel);
+  border: 0.5px solid #b8c0ca;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
@@ -298,7 +330,7 @@ section.bg-white {
 }
 
 .offer-col:nth-child(2) {
-  border-top-color: var(--gold);
+  border-color: #b8c0ca;
 }
 
 .offer-col h3 {
@@ -519,6 +551,16 @@ footer img.logo {
 
 .services-overview-section {
   padding: 48px 0;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('stairs.jpg');
+  background-size: cover;
+  background-position: center 46%;
+  background-repeat: no-repeat;
 }
 
 .services-overview {
@@ -833,6 +875,20 @@ img.profile {
   line-height: 1.75;
   color: var(--navy);
   max-width: 900px;
+}
+
+.cv-summary-section {
+  border-top: none;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('parking.jpg');
+  background-size: cover;
+  background-position: center 52%;
+  background-repeat: no-repeat;
 }
 
 .experience-block {
