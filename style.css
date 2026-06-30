@@ -824,7 +824,7 @@ footer img.logo {
 .cv-title-section {
   padding: 64px 0 48px;
   background-color: var(--white);
-  border-bottom: 3px solid var(--steel);
+  border-bottom: none;
 }
 
 .cv-title-grid {
@@ -877,15 +877,16 @@ img.profile {
   max-width: 900px;
 }
 
-.cv-summary-section {
+section.bg-pale.cv-summary-section {
   border-top: none;
+  background-color: transparent;
   background-image:
     linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url('parking.jpg');
+    url('swissmill.jpg');
   background-size: cover;
   background-position: center 52%;
   background-repeat: no-repeat;
