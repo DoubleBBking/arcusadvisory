@@ -189,7 +189,7 @@ section.bg-pale {
 }
 
 section.offer-section {
-  padding: calc(80px - 1cm) 0;
+  padding: calc(100px + 1cm) 0;
 }
 
 section.offer-section--bg {
@@ -316,17 +316,19 @@ section.bg-white {
 .offer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.1rem;
+  gap: 2.25rem;
+  max-width: 960px;
+  margin: 0;
 }
 
 .offer-col {
   background: var(--white);
-  padding: 2.2rem 1.5rem;
+  padding: 2.8rem 1.75rem;
   border: 0.5px solid #b8c0ca;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  min-height: 460px;
+  min-height: 540px;
 }
 
 .offer-col:nth-child(2) {
@@ -1073,7 +1075,7 @@ section.bg-pale.cv-summary-section {
   }
 
   section.offer-section {
-    padding: calc(48px - 1cm) 0;
+    padding: calc(72px + 0.5cm) 0;
   }
 
   .hero-clean {
