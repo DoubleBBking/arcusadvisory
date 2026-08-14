@@ -147,7 +147,7 @@ img.logo {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 1.35rem;
 }
 
 .site-nav a {
