@@ -177,6 +177,23 @@ img.logo {
   letter-spacing: 0.01em;
 }
 
+.site-nav a.nav-cta {
+  background-color: var(--navy);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.85rem;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.site-nav a.nav-cta:hover {
+  background-color: var(--steel);
+  color: var(--white);
+}
+
 /* ── Sections ── */
 
 section {
@@ -1093,6 +1110,11 @@ section.bg-pale.cv-summary-section {
   .site-nav a,
   .site-nav .nav-disabled {
     font-size: 0.8125rem;
+  }
+
+  .site-nav a.nav-cta {
+    font-size: 0.6875rem;
+    padding: 0.35rem 0.65rem;
   }
 
   .offer-grid {
