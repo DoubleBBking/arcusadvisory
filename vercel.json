@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/ils-monitor", "destination": "https://arcus-ils-monitor.vercel.app" },
+    { "source": "/ils-monitor/:match*", "destination": "https://arcus-ils-monitor.vercel.app/:match*" }
+  ]
+}
